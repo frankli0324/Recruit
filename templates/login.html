@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block body %}
+    <form action="/api/user/" onsubmit="submitForm(this)">
+        <input name="action" type="hidden" value="login">
+        <label> Username
+            <input name="username" type="text" placeholder="username">
+        </label><br>
+        <label> Password
+            <input name="password" type="text" placeholder="password">
+        </label><br>
+        <input type="submit" value="登陆">
+    </form>
+{% endblock %}
+
+{% block script %}
+    <script>
+        function submitForm(form) {
+            console.log(form)
+        }
+    </script>
+{% endblock %}

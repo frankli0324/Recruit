@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <ul>
+        {% for i in challenges %}
+            <li>i.name</li>
+        {% endfor %}
+    </ul>
+
+    {% block challenge %}
+    {% endblock %}
+{% endblock %}
